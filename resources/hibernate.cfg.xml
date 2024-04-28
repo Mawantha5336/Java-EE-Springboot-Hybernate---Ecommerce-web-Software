@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ecomm_db?useSSL=false&amp;allowPublicKeyRetrieval=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">MawaNtha5@5336</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <mapping class="lk.jiat.web.ecomm.entity.User"/>
+        <mapping class="lk.jiat.web.ecomm.entity.Admin"/>
+        <mapping class="lk.jiat.web.ecomm.entity.AppSetting"/>
+        <mapping class="lk.jiat.web.ecomm.entity.Product"/>
+        <mapping class="lk.jiat.web.ecomm.entity.Category"/>
+    </session-factory>
+</hibernate-configuration>
